@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <style>
+      .container {
+        width: 1200px;
+        height: 500px;
+
+        display: grid;
+        margin: 20px auto;
+        grid-template-rows: 50px 300px 150px;
+      }
+      #gridItem1 {
+        background-color: lightcoral;
+      }
+      #gridItem2 {
+        background-color: lightgrey;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+      #gridItem3 {
+        background-color: lightgreen;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="gridItem1">1</div>
+      <div id="gridItem2">
+        <div style="background-color: red">1</div>
+
+        <div style="background-color: black">2</div>
+      </div>
+      <div id="gridItem3">3</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <style>
+      .container {
+        width: 1200px;
+        height: 500px;
+
+        display: grid;
+        margin: 20px auto;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 250px);
+        column-gap: 10px;
+        row-gap: 30px;
+      }
+      #gridItem1 {
+        background-color: lightcoral;
+        grid-column: 1/3;
+        grid-row: 1/3;
+      }
+      #gridItem2 {
+        background-color: lightgrey;
+        grid-column: 3/5;
+        grid-row: 2/3;
+      }
+      #gridItem3 {
+        background-color: lightgreen;
+        grid-column: 3/5;
+        grid-row: 1/2;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="gridItem1">1</div>
+      <div id="gridItem2">2</div>
+      <div id="gridItem3">3</div>
+    </div>
+  </body>
+</html>

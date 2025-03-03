@@ -1,0 +1,12 @@
+div {
+  color: white;
+  border: 3px solid black;
+  width: 270px;
+
+  height: 370px;
+  text-align: center;
+  background-color: black;
+}
+button {
+  padding: 7px 20px;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #container {
+        border: 3px solid red;
+        width: 500px;
+        height: 400px;
+      }
+      @media screen and (min-width: 0px) and (max-width: 400px) {
+        div {
+          background-color: black;
+        }
+        h1 {
+          color: white;
+        }
+      }
+
+      @media screen and (min-width: 401px) and (max-width: 700px) {
+        div {
+          background-color: red;
+        }
+        h1 {
+          color: black;
+        }
+      }
+
+      @media screen and (min-width: 701px) and (max-width: 1000px) and (orientation: landscape) {
+        div {
+          background-color: green;
+        }
+        h1 {
+          color: white;
+        }
+      }
+
+      @media screen and (min-width: 1000px) {
+        div {
+          background-color: yellow;
+        }
+        h1 {
+          color: black;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <h1>Media Queries</h1>
+    </div>
+  </body>
+</html>
