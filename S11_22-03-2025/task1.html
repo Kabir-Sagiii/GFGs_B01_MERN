@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script>
+      var h1 = React.createElement(
+        "h1",
+        { id: "title", name: "heading" },
+        "React JS with Sagar"
+      );
+      var p = React.createElement(
+        "p",
+        null,
+        "React is super super easy if i study with sagar"
+      );
+
+      ReactDOM.render([h1, p, h1, p], document.getElementById("root"));
+    </script>
+  </body>
+</html>

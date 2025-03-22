@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function f1() {
+        console.log("f1 is called");
+        var btn2 = document.getElementById("noevent");
+
+        btn2.addEventListener("click", f2);
+      }
+
+      function f2() {
+        console.log("f2 is called");
+      }
+    </script>
+  </head>
+  <body>
+    <h2>Dynamic events</h2>
+
+    <button id="event" onclick="f1()">with event</button>
+
+    <button id="noevent">without event</button>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #h2 {
+        color: red;
+      }
+    </style>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  </head>
+  <body>
+    <div id="gfg"></div>
+    <script>
+      var h2Element = React.createElement("h2", { id: "h2" }, "Title");
+      var pElement = React.createElement(
+        "p",
+        null,
+        "Amma, React ante inta easy na"
+      );
+      var firstChildDiv = React.createElement("div", null, h2Element);
+      var secondChildDiv = React.createElement("div", null, pElement);
+      var divContainer = React.createElement("div", null, [
+        firstChildDiv,
+        secondChildDiv,
+      ]);
+
+      ReactDOM.render(divContainer, document.getElementById("gfg"));
+    </script>
+  </body>
+</html>

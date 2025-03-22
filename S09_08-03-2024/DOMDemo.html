@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function getDomElement() {
+        var h2DomElement = document.getElementById("title");
+        var pDomElement = document.querySelector("p");
+
+        console.log(h2DomElement.innerText);
+
+        // for (var x in pDomElement) {
+        //   console.log(x);
+        // }
+      }
+    </script>
+  </head>
+
+  <body>
+    <div>
+      <h2 id="title">Welcome to JS</h2>
+      <p id="p1">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est quia
+        voluptatibus, aliquid magni dolor sit deleniti autem, vel aut voluptate
+        et expedita eos accusamus exercitationem! Eos harum illum consequatur a
+        deleniti. Ipsum eligendi atque dolorem, repudiandae magnam eius unde
+        itaque, rem vitae sit numquam voluptate, deleniti harum quas nam.
+        Exercitationem veritatis sit itaque consequuntur? Commodi natus vel
+        maxime maiores dolor soluta obcaecati ipsum, recusandae non nam! Minus
+        similique animi modi, voluptates natus numquam, aliquam ipsum, sint
+        officiis nihil rerum. Soluta placeat illum harum omnis eum possimus
+        accusamus provident optio quidem natus obcaecati, similique nostrum
+        reprehenderit qui ut animi pariatur consequatur?
+      </p>
+      <button onclick="getDomElement()">DOM</button>
+    </div>
+  </body>
+</html>

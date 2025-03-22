@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function f1() {
+        console.log("f1 is called");
+      }
+
+      function fnRemove(event) {
+        var buttondom = event.target;
+        var pDom = document.querySelector("p");
+        // pDom.remove();
+
+        var h3DomElement = document.createElement("h3");
+        var imgDomElement = document.createElement("img");
+        // <img src="" width="" height="" />
+        //<h3>  </h3>
+
+        h3DomElement.innerText = "i am new h3";
+
+        imgDomElement.width = "300";
+        imgDomElement.height = "300";
+        imgDomElement.src =
+          "https://th.bing.com/th/id/OIP.9k_GOA2TNHH70WjDdav4owAAAA?rs=1&pid=ImgDetMain";
+
+        var bodyDomElement = document.querySelector("body");
+        bodyDomElement.appendChild(h3DomElement);
+        bodyDomElement.appendChild(imgDomElement);
+      }
+    </script>
+  </head>
+  <body>
+    <h2>Remove DOM element</h2>
+    <ol type="a">
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+    </ol>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae iste vero
+      ea quibusdam vel earum maxime delectus assumenda quod unde voluptatem
+      asperiores magnam quisquam possimus eius deserunt illum, porro error.
+    </p>
+
+    <button onclick="fnRemove(event)">remove para</button>
+  </body>
+</html>
