@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #container {
+        display: flex;
+        justify-content: space-evenly;
+      }
+      #card {
+        width: 270px;
+        height: 330px;
+        border: 3px solid green;
+        padding: 5px;
+        text-align: center;
+        background-color: black;
+        color: white;
+      }
+    </style>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+      function createCard(username, url) {
+        return (
+          <div id="card">
+            <img src={url} width="270" height="270" />
+            <h3> {username} </h3>
+          </div>
+        );
+      }
+
+      function app() {
+        return (
+          <div id="container">
+            {createCard(
+              "Raj Verma",
+              "https://i.pinimg.com/originals/97/31/02/9731022f0be7c965e880505461643850.jpg"
+            )}
+            {createCard(
+              "Nikhil Sharma",
+              "https://i.pinimg.com/originals/07/33/ba/0733ba760b29378474dea0fdbcb97107.png"
+            )}
+            {createCard(
+              "Ajay Reddy",
+              "https://th.bing.com/th/id/R.370d40dc21afc78e8f06acb36918ab19?rik=oNQlj8ahou873A&riu=http%3a%2f%2fthispix.com%2fwp-content%2fuploads%2f2015%2f06%2fEdit-9898-1.jpg&ehk=7BvmF7qMg4P5KKrPuNkQgCFUW74QcUJTU9BGOtd5bgU%3d&risl=&pid=ImgRaw&r=0"
+            )}
+            {createCard(
+              "Suraj Patil",
+              "https://th.bing.com/th/id/OIP.XkBiMUbJmJX930NHMU-j8gAAAA?rs=1&pid=ImgDetMain"
+            )}
+          </div>
+        );
+      }
+
+      ReactDOM.render(app(), document.getElementById("root"));
+
+      //   ReactDOM.render(
+      //     <div id="container">
+      //       {card}
+      //       {card}
+      //       {card}
+      //       {card}
+      //     </div>,
+      //     document.getElementById("root")
+      //   );
+
+      //   ReactDOM.render([card, card, card], document.getElementById("root"));
+    </script>
+  </body>
+</html>

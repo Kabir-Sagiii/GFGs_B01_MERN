@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+      const container = (
+        <div>
+          <div>
+            <h2> JSX is simple</h2>
+          </div>
+
+          <div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
+              numquam ducimus mollitia? Perferendis, aliquam reprehenderit fugit
+              totam deserunt numquam odit repellat dolorum hic beatae voluptatem
+              laborum ipsum officiis aut modi.{" "}
+            </p>
+          </div>
+        </div>
+      );
+
+      ReactDOM.render(container, document.getElementById("root"));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      //   const imageReactElement = React.createElement("img", {
+      //     src: "https://i.pinimg.com/originals/07/33/ba/0733ba760b29378474dea0fdbcb97107.png",
+      //     width: "300",
+      //     height: "300",
+      //   });
+
+      const imageReactElement = (
+        <img
+          src="https://i.pinimg.com/originals/07/33/ba/0733ba760b29378474dea0fdbcb97107.png"
+          width="300"
+          height="300"
+        />
+      );
+
+      ReactDOM.render(imageReactElement, document.getElementById("root"));
+    </script>
+  </body>
+</html>

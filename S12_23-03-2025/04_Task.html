@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .mycontainer {
+        width: 1200px;
+        margin: 30px auto;
+        padding: 30px;
+        background-color: black;
+        color: cornsilk;
+      }
+    </style>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+      function techContainer(title) {
+        return (
+          <div className="mycontainer">
+            <h2>{title} </h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Explicabo quos id quod hic tempore tenetur tempora nulla
+              voluptatum dolores dicta dignissimos eos ipsum blanditiis iste,
+              quia facilis, laborum nesciunt omnis. Quo quasi nesciunt corporis
+              dolore perspiciatis quia officiis minus officia veritatis
+              laboriosam, nemo alias recusandae nulla magnam enim quos cum rem
+              tempora ab. Ab, voluptatem adipisci perferendis fugiat error
+              consectetur natus, est sint voluptate vero tenetur illum amet
+              corporis possimus eius deserunt praesentium rem accusamus
+              veritatis unde debitis odio. Enim voluptatibus atque, eligendi
+              facere repudiandae officiis mollitia dolore quibusdam ea corrupti
+              optio soluta, error qui amet labore rem quod dignissimos.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas,
+              ullam, consequuntur cupiditate molestias recusandae tenetur
+              adipisci sint soluta voluptatum voluptatem earum iusto quisquam,
+              eveniet ipsam laboriosam aperiam minus? Aspernatur magni
+              distinctio, enim tenetur et deleniti qui explicabo commodi optio
+              repellendus fuga quasi porro quisquam iusto possimus labore at
+              veritatis dolores, laudantium unde ut aliquid atque inventore
+              dicta. Placeat tempora aut iure molestias adipisci reprehenderit
+              dolore itaque vitae delectus a ut, accusamus cumque voluptas esse
+              autem veritatis magnam blanditiis fugit quo nostrum maxime! Iure,
+              asperiores optio voluptatem laborum ab odio neque facere cum
+              impedit quo perspiciatis, doloribus architecto mollitia saepe
+              placeat.
+            </p>
+          </div>
+        );
+      }
+
+      function app() {
+        return (
+          <div>
+            {techContainer("HTML")}
+            {techContainer("CSS")}
+          </div>
+        );
+      }
+
+      ReactDOM.render(app(), document.getElementById("root"));
+    </script>
+  </body>
+</html>
