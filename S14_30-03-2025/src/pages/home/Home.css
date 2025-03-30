@@ -1,0 +1,99 @@
+/* Global Styles */
+
+/* Home Container */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Welcome Card */
+.welcome-card {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-bottom: 40px;
+  width: 100%;
+  max-width: 600px;
+}
+
+.welcome-title {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.welcome-description {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 25px;
+}
+
+.explore-btn {
+  padding: 12px 30px;
+  font-size: 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.explore-btn:hover {
+  background-color: #45a049;
+}
+
+/* Info Section */
+.info-section {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.info-section h2 {
+  width: 100%;
+  text-align: center;
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.info-card {
+  background-color: #fff;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+}
+
+.info-card h3 {
+  font-size: 22px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.info-card p {
+  font-size: 16px;
+  color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .welcome-card {
+    padding: 30px;
+  }
+
+  .info-card {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+}

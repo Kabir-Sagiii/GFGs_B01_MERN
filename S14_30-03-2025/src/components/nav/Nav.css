@@ -1,0 +1,27 @@
+.navcontainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  background-color: black;
+  color: white;
+}
+.navcontainer div:nth-child(1) {
+  margin-left: 150px;
+}
+.navcontainer div:nth-child(2) {
+  margin-right: 150px;
+}
+.navcontainer button {
+  padding: 7px 20px;
+  background: none;
+  color: white;
+  border: 3px solid red;
+  border-radius: 7px;
+  font-weight: bold;
+  font-size: 17px;
+}
+.navcontainer button:hover {
+  background-color: red;
+  color: white;
+}
