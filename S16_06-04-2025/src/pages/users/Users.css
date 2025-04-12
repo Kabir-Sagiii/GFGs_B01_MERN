@@ -1,0 +1,31 @@
+.usersContainer {
+  padding: 20px;
+}
+.usersContainer h2 {
+  color: green;
+  font-size: 37px;
+  margin-bottom: 20px;
+}
+.usersContainer p {
+  color: black;
+  margin-bottom: 20px;
+  font-size: 17px;
+  font-family: cursive;
+}
+.usersContainer button {
+  border: 3px solid green;
+  padding: 7px 20px;
+}
+.usersCard {
+  padding: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.usersCard .card {
+  width: 300px;
+  padding: 20px;
+  box-shadow: 0 0 10px black;
+  text-align: center;
+}

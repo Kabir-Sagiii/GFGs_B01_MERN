@@ -1,0 +1,44 @@
+.A {
+  width: 800px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 0 10px green;
+  margin: 20px auto;
+}
+.A button {
+  padding: 7px 20px;
+  margin-top: 10px;
+}
+.B {
+  width: 600px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 0 10px coral;
+  margin: 5px auto;
+}
+.C {
+  width: 400px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 0 10px blue;
+  margin: 5px auto;
+}
+.D {
+  width: 300px;
+  padding: 50px;
+  text-align: center;
+  box-shadow: 0 0 10px black;
+  margin: 5px auto;
+}
+.E {
+  width: 200px;
+  padding: 50px;
+  text-align: center;
+  box-shadow: 0 0 10px red;
+  margin: 5px auto;
+}
+.E p {
+  font-size: 21px;
+  font-weight: bold;
+  color: red;
+}

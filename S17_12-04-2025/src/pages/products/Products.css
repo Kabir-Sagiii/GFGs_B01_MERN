@@ -1,0 +1,54 @@
+.banner {
+  width: 1000px;
+  height: 290px;
+  border: 2px solid red;
+  margin: 30px auto;
+  background-image: url("https://img.freepik.com/premium-photo/ecommerce-shopping-cart-with-multiple-products-sunlit-abstract-background-ecommerce-concept-ai-generative_892235-2478.jpg");
+  background-size: 100% 100%;
+  background-position: center;
+}
+.banner div {
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.banner h1 {
+  color: white;
+  width: 800px;
+  margin-bottom: 20px;
+}
+.banner div h1 {
+  font-size: 37px;
+}
+table {
+  margin: 20px auto;
+}
+table img {
+  border-radius: 50%;
+}
+
+.productsContainer h2 {
+  color: red;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 42px;
+  font-family: cursive;
+}
+#update {
+  border: 3px solid green;
+  color: green;
+  padding: 7px 20px;
+}
+#delete {
+  border: 3px solid red;
+  color: red;
+  padding: 7px 20px;
+}
+th,
+td {
+  padding: 10px;
+}
