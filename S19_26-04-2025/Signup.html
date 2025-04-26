@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup Page</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      body {
+        background: linear-gradient(135deg, #66ea87, #5ba24b);
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .signup-container {
+        background: #fff;
+        padding: 40px 50px;
+        border-radius: 15px;
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+        max-width: 400px;
+        width: 100%;
+      }
+
+      .signup-container h2 {
+        text-align: center;
+        margin-bottom: 25px;
+        color: #333;
+      }
+
+      .form-group {
+        position: relative;
+        margin-bottom: 30px;
+      }
+
+      .form-group input {
+        width: 100%;
+        padding: 12px 15px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        outline: none;
+        transition: border-color 0.3s ease;
+        font-size: 16px;
+      }
+
+      .form-group label {
+        position: absolute;
+        left: 15px;
+        top: 12px;
+        background: #fff;
+        padding: 0 5px;
+        color: #aaa;
+        font-size: 14px;
+        pointer-events: none;
+        transition: all 0.3s ease;
+      }
+
+      .form-group input:focus {
+        border-color: #667eea;
+      }
+
+      .form-group input:focus + label,
+      .form-group input:not(:placeholder-shown) + label {
+        top: -10px;
+        left: 10px;
+        font-size: 12px;
+        color: #667eea;
+      }
+
+      .gender-group {
+        margin-bottom: 20px;
+      }
+
+      .gender-group label {
+        margin-right: 15px;
+        font-size: 15px;
+        color: #333;
+      }
+
+      .gender-group input[type="radio"] {
+        margin-right: 6px;
+        accent-color: #667eea;
+      }
+
+      .submit-btn {
+        width: 100%;
+        padding: 12px;
+        background: #667eea;
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background 0.3s ease;
+      }
+
+      .submit-btn:hover {
+        background: #5561d3;
+      }
+
+      @media (max-width: 480px) {
+        .signup-container {
+          padding: 30px 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="signup-container">
+      <h2>Create Account</h2>
+      <form>
+        <div class="form-group">
+          <input type="text" id="username" required placeholder=" " />
+          <label for="username">Username</label>
+        </div>
+        <div class="form-group">
+          <input type="email" id="email" required placeholder=" " />
+          <label for="email">Email</label>
+        </div>
+        <div class="form-group">
+          <input type="password" id="password" required placeholder=" " />
+          <label for="password">Password</label>
+        </div>
+        <div class="gender-group">
+          <label>Gender:</label>
+          <label
+            ><input type="radio" name="gender" value="male" required />
+            Male</label
+          >
+          <label
+            ><input type="radio" name="gender" value="female" /> Female</label
+          >
+          <label
+            ><input type="radio" name="gender" value="other" /> Other</label
+          >
+        </div>
+        <button type="submit" class="submit-btn">Sign Up</button><br /><br />
+        <p class="footer-text">
+          Have an account? <a href="/login">Navigate to Sign In</a>
+        </p>
+      </form>
+    </div>
+  </body>
+</html>

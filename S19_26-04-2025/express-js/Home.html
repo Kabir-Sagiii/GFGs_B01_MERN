@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modern Home Page</title>
+    <style>
+      /* Reset + Base */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body,
+      html {
+        font-family: "Segoe UI", sans-serif;
+        scroll-behavior: smooth;
+        background-color: #f8f9fa;
+      }
+
+      /* Navbar */
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #1e1e2f;
+        padding: 1rem 2rem;
+        color: #fff;
+      }
+      .logo {
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+      .nav-links {
+        list-style: none;
+        display: flex;
+        gap: 1.5rem;
+      }
+      .nav-links a {
+        color: #fff;
+        text-decoration: none;
+        transition: color 0.3s;
+      }
+      .nav-links a:hover {
+        color: #f39c12;
+      }
+
+      /* Hero Section */
+      .hero {
+        height: 90vh;
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+          url("https://source.unsplash.com/1600x900/?nature,landscape")
+            no-repeat center center/cover;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+      .hero-content h1 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+      }
+      .hero-content p {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+      }
+      .cta-button {
+        background: #f39c12;
+        color: #fff;
+        padding: 0.75rem 1.5rem;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: background 0.3s;
+      }
+      .cta-button:hover {
+        background: #d35400;
+      }
+
+      /* Footer */
+      .footer {
+        background: #1e1e2f;
+        color: #aaa;
+        text-align: center;
+        padding: 1rem;
+        font-size: 0.9rem;
+      }
+
+      /* Responsive */
+      @media (max-width: 768px) {
+        .nav-links {
+          flex-direction: column;
+          gap: 1rem;
+        }
+        .hero-content h1 {
+          font-size: 2.2rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="logo">MySite</div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Welcome to MySite</h1>
+        <p>Clean. Responsive. Beautiful.</p>
+        <a href="#" class="cta-button">Get Started</a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>&copy; 2025 MySite. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
