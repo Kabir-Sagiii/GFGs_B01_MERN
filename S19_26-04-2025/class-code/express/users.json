@@ -1,0 +1,14 @@
+{
+    "data": [
+        {
+            "name": "sagar Goud",
+            "gender": "male",
+            "email": "sagar@gmail"
+        },
+        {
+            "name": "Aishwariya Khana",
+            "gender": "female",
+            "email": "aish@gmail"
+        }
+    ]
+}

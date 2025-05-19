@@ -1,0 +1,13 @@
+.profileContainer {
+  width: 800px;
+  height: 400px;
+  margin: 50px auto;
+  box-shadow: 0 0 10px red;
+  display: grid;
+
+  grid-template-columns: 300px 500px;
+}
+.rightCompContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
